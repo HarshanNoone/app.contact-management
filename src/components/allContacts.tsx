@@ -22,7 +22,7 @@ function AllContacts({ onNavigateToCreate }: AllContactsProps) {
   const [searchString, setSearchString] = useState<string>('')
 
   useEffect(() => {
-    const apiUrl = "http://localhost:3000";
+    const apiUrl = "https://api-contact-management-6e3t.onrender.com";
     const controller = new AbortController();
 
     const timeoutId = setTimeout(() => {
