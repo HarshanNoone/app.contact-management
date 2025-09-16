@@ -15,7 +15,7 @@ function CreateContact({ onNavigateBack }: CreateContactProps) {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    const apiUrl = "http://localhost:3000";
+    const apiUrl = "https://api-contact-management-6e3t.onrender.com";
 
     axios
       .post(`${apiUrl}/create-contact`, {
