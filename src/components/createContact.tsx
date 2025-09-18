@@ -15,8 +15,8 @@ function CreateContact({ onNavigateBack }: CreateContactProps) {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    const apiUrl = "https://api-contact-management-6e3t.onrender.com";
-
+    // const apiUrl = "https://api-contact-management-6e3t.onrender.com";
+    const apiUrl = import.meta.env.VITE_API_URL
     axios
       .post(`${apiUrl}/create-contact`, {
         first_name: formData.get("first_name"),

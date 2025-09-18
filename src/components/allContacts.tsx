@@ -22,7 +22,8 @@ function AllContacts({ onNavigateToCreate }: AllContactsProps) {
   const [searchString, setSearchString] = useState<string>('')
 
   useEffect(() => {
-    const apiUrl = "https://api-contact-management-6e3t.onrender.com";
+    // const apiUrl = "https://api-contact-management-6e3t.onrender.com";
+    const apiUrl = import.meta.env.VITE_API_URL
     const controller = new AbortController();
 
     const timeoutId = setTimeout(() => {
