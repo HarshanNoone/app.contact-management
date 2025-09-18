@@ -7,7 +7,7 @@ interface CreateContactProps {
 }
 
 function CreateContact({ onNavigateBack }: CreateContactProps) {
-  const [contact, setContact] = useState([])
+  const [_contact, setContact] = useState<any[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = (e: any) => {

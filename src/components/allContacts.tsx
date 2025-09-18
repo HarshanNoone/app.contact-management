@@ -15,7 +15,7 @@ interface AllContactsProps {
 }
 
 function AllContacts({ onNavigateToCreate }: AllContactsProps) {
-  const [contacts, setContacts] = useState<Contact[]>([])
+  const [contacts, setContacts] = useState<any[]>([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [selectedGroup, setSelectedGroup] = useState<string>('All')
   const [groups, setGroups] = useState<string[]>([])
